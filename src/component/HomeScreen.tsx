@@ -4,6 +4,8 @@ import { Navigation } from 'react-native-navigation';
 import Base from '../style/base';
 
 const HomeScreen = (props: any) => {
+
+    console.log(props)
     return (
         <View style={Base.root}>
             <Text>Home Screen</Text>
