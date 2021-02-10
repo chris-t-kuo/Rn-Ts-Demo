@@ -6,6 +6,14 @@ const Base = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'whitesmoke'
+    },
+    welcome: {
+        fontSize: 28
+    },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 

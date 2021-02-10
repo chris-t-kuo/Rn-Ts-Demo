@@ -1,9 +1,8 @@
 import { Navigation } from 'react-native-navigation';
-import HomeScreen from './src/component/HomeScreen';
-import SettingScreen from './src/component/SettingScreen';
+import registerScreens from './src/screens/index';
+import screen from './src/constant/index';
 
-Navigation.registerComponent('Home', () => HomeScreen);
-Navigation.registerComponent('Setting', () => SettingScreen);
+registerScreens();
 
 Navigation.setDefaultOptions({
     statusBar: {
@@ -29,7 +28,10 @@ Navigation.events().registerAppLaunchedListener(() => {
                 children: [
                     {
                         component: {
-                            name: 'Home'
+                            name: screen.initial,
+                            options: {
+
+                            }
                         }
                     }
                 ]

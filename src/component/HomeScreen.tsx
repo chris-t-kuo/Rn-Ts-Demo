@@ -1,11 +1,10 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import Base from '../style/base';
+import screen from '../constant/index';
 
 const HomeScreen = (props: any) => {
-
-    console.log(props)
     return (
         <View style={Base.root}>
             <Text>Home Screen</Text>
@@ -14,7 +13,7 @@ const HomeScreen = (props: any) => {
                 color='#710ce3'
                 onPress={() => Navigation.push(props.componentId, {
                     component: {
-                        name: 'Setting',
+                        name: screen.setting,
                         options: {
                             topBar: {
                                 title: {
