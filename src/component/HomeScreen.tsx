@@ -10,7 +10,7 @@ const HomeScreen = (props: any) => {
             <Text>Home Screen</Text>
             <Button
                 title='Push Setting Screen'
-                color='#710ce3'
+                color='red'
                 onPress={() => Navigation.push(props.componentId, {
                     component: {
                         name: screen.setting,
